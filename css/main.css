@@ -1,0 +1,40 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background:black;
+}
+
+#toDoContainer{
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 1em;
+    display:grid;
+    grid-template-columns: 200px;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+    padding: 10px 0 10px 0;
+}
+
+#toDoList{
+    /* list-style-type: square; */
+    padding: 0;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.toDoItem:hover, .toDoItemLabel{
+    cursor: pointer;
+}
+
+.toDoItem {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    background-color: darkred;
+    border-radius: 1em;
+    padding: 0.2em 0 0.2em 0.5em;
+    text-align: start;
+    margin-top: 8px;
+    width: fit-content;
+    user-select: none;
+}
